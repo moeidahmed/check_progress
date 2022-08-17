@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Project Management | Trello</title>
+    <link rel="icon" type="image/x-icon" href="favicon/favicon.png" />
+  </head>
+  <style>
+    * {
+      padding: 0%;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(55, 9, 99);
+    }
+
+    .navbar {
+      background-color: blue;
+      height: 60px;
+      padding: 3px;
+      padding-right: 3px;
+      padding-left: 3px;
+      padding-bottom: 3px;
+    }
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+    }
+
+    .dropdown {
+      float: left;
+    }
+
+    .dropdown .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+    }
+
+    .navbar a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: lightblue;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a,p {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .search-container {
+      float: right;
+      padding-top: 8px;
+      padding-left: 8px;
+    }
+    .button {
+      background-color: #728fce;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+    }
+    .baner {
+      background-color: rgb(1, 32, 1);
+      text-align: center;
+      width: 100%;
+      padding: 1%;
+      font-size: small;
+      color: white;
+    }
+
+    .baner button {
+      background-color: blue;
+      border: none;
+      padding: 1%;
+      color: white;
+    }
+    .baner a {
+      padding: 1%;
+      color: white;
+    }
+    .clearfix {
+      display: table;
+      clear: both;
+    }
+    .card {
+      background-color: #ddd;
+      border-radius: 10px;
+      width: 250px;
+      height: auto;
+      float: left;
+      margin-top: 10px;
+      margin-left: 10px;
+      padding: 5px;
+    }
+    .card-title {
+      font-weight: 600;
+      padding: 10px;
+    }
+    .color {
+      width: 10%;
+      height: 10px;
+      display: inline-block;
+      border-radius: 10px;
+      padding: 2%;
+    }
+    .color-yellow {
+      background-color: yellow;
+    }
+    .color-red {
+      background-color: red;
+    }
+    .color-purple {
+      background-color: purple;
+    }
+    .color-blue {
+      background-color: blue;
+    }
+    .color-green {
+      background-color: green;
+    }
+    .card-data {
+      background-color: white;
+      border-radius: 3px;
+      width: 230px;
+      height: auto;
+      margin-top: 5px;
+      margin-left: 5px;
+    }
+    .card-data img{
+      border-radius: 0%;
+    }
+  .card-data a {
+    float: right;
+  }
+    .newnav {
+      background-color: rgb(55, 9, 99);
+      width: 100%;
+      padding: 20px;
+      padding-top: 20px;
+      color: white;
+      text-align: center;
+      display: inline-block;
+    }
+    
+img {
+  border-radius: 50%;
+}
+  </style>
+  <body>
+    <div class="navbar">
+      <a href="#Trelo">Trello</a>
+      <div class="dropdown">
+        <button class="dropbtn" title="Worksapce">
+          Workspaces
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <iframe src="workspace.html" width="250" height="200"></iframe>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" title="Recent">
+          Recent
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <iframe src="recent.html" width="250" height="200"></iframe>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" title="Starred">
+          Starred
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <iframe src="Starred.html" width="250" height="200"></iframe>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn" title="Templates">
+          Templates
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <iframe src="templates.html" width="250" height="200"></iframe>
+        </div>
+      </div>
+      <button class="button">Create</button>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+      <br />
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="baner">
+      <p style="color: white;">
+        This is public template for anyone on the internet to copy.
+        <button>Create board from template</button
+        ><a href="#">Explore more template</a>
+      </p>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="newnav">
+      <p>
+        <div class="dropdown">
+          <button>Board 
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Boards</a><p style="color: black;"><small>Organize cards in lists on a board.</small></p>
+            <a href="#">Map</a><p style="color: black;"><small>Visualize card locations on an interactive map.</small></p>
+            <a href="#">Timeline</a><p style="color: black;"><small>Visually plan time and workload.</small></p>
+            <a href="#">Calender</a><p style="color: black;"><small>See cards with due dates in a monthly or weekly format.</small></p>
+            <a href="#">Dashboard</a><p style="color: black;"><small>Generate charts, visuals, and metrics for work on this board.</small></p>
+            <a href="#">Table</a><p style="color: black;"><small>Display and edit cards in a table format.</small></p>
+          </div>
+        </div> 
+        Project Management
+        <button>Template</button>
+        <button>Star</button>|
+        <button class="button"><img src="favicon/favicon.png" style="width: 15px;;height:15;">  Trello Inc</button>|
+        <button class="button"><img src="Images/public.png" style="width: 15px;;height:15;">  Public</button>|
+        <a href="https://www.alliedc.com/"><img src="favicon/favicon.png"  style="width:30px;height:30px;"></a>
+        <a href="https://www.alliedc.com/"><img src="favicon/favicon.png"  style="width:30px;height:30px;"></a>
+        <a href="https://www.alliedc.com/"><img src="favicon/favicon.png"  style="width:30px;height:30px;"></a>
+        <a href="https://www.alliedc.com/"><img src="favicon/favicon.png"  style="width:30px;height:30px;"></a>
+        <button class="button"><img src="Images/calender.png" style="width: 15px;;height:15;">  Calender Power-Up</button> |
+        <button class="button"><img src="Images/filter.png" style="width: 15px;;height:15;">  Filter</button>|
+        <button class="button"><img src="Images/menu.jpg" style="width: 15px;;height:15;">  Show Menu</button> 
+      </p>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Project Resources</p>
+      <div class="card-data">
+        <div class="color color-yellow"></div>
+        <div class="color color-red"></div>
+        <div class="color color-purple"></div>
+        <div class="color color-blue"></div>
+        <div class="color color-green"></div>
+        <br />
+        Trello Tip; card labels! What they do mean? (Click for more Info)
+      </div>
+      <div class="card-data">
+        Project "Teamwork Dream Work"<br />Launch Timeline
+      </div>
+      <div class="card-data">Stake Holders
+          </a>
+      </div>
+      <div class="card-data">Weekly Updates</div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Question For Next Meeting</p>
+      <div class="card-data">
+        <div class="color color-blue"></div>
+        <br />
+        Trello Tip; Slide your Q's into this handly list so your teams keep
+        onflowing.
+      </div>
+      <div class="card-data">Who's the best person to fix my HTML snag?</div>
+      <div class="card-data">
+        How can I get success to the super secret document?
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">To Do</p>
+      <div class="card-data">
+        <div class="color color-blue"></div>
+        <br />
+        Trello Tip; This is where i assigned tasks live so that your team can
+        see who's workingon what and when it's due
+      </div>
+      <div class="card-data">
+        <div class="color color-purple"></div>
+        <br />
+        Sketch site banner
+      </div>
+      <div class="card-data">Edit email drafts </div>
+      <div class="card-data">
+        <div class="color color-yellow"></div>
+        <br />Curate customer list
+      </div>
+      <div class="card-data">Sketch the "Teamy Dream"Font</div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Pending</p>
+      <div class="card-data">
+        <div class="color color-blue"></div>
+        <br />
+        Trello Tip;For those in-between tasks that are almost done but also
+        awaiting on last step
+      </div>
+      <div class="card-data">Legal Review</div>
+      <div class="card-data">
+        <div class="color color-purple"></div>
+        <br />
+        Social media assests
+      </div>
+    </div>
+
+    <div class="card">
+      <p class="card-title">Blocked</p>
+      <div class="card-data">
+        <img
+          src="https://trello.com/1/cards/5c3e2fdb0fa92e43b849d856/attachments/5c3e2fdc0fa92e43b849d88a/previews/5c3e2fdc0fa92e43b849d88b/download/giphy.gif"
+          width="230"
+        />
+        <div class="color color-blue"></div>
+        <br />
+        Trello Tip; Splash those redtape-heavy issues that are slowing you team
+        down here.
+      </div>
+
+      <div class="card-data">
+        <div class="color color-yellow"></div>
+        <br />
+        Freelancers Contract
+      </div>
+      <div class="card-data">Budget approval</div>
+    </div>
+  </body>
+</html>
