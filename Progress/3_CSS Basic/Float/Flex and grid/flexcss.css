@@ -1,0 +1,48 @@
+.color-1 {
+  background-color: blueviolet;
+}
+.color-2 {
+  background-color: orangered;
+}
+.color-3 {
+  background-color: green;
+  height: 100px;
+}
+.color-4 {
+  background-color: goldenrod;
+}
+.color-5 {
+  background-color: palevioletred;
+}
+.color-6 {
+  background-color: steelblue;
+  order: 1;
+}
+.color-7 {
+  background-color: yellow;
+  align-self: center;
+}
+.color-8 {
+  background-color: crimson;
+}
+.color-8 {
+  align-self: baseline;
+  order: -1;
+}
+.color-5 {
+  align-self: flex-end;
+}
+.container {
+  font-family: calc();
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+  /*Flex*/
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 25px;
+  flex: 1; /*cover equal space in a container*/
+  flex-basis: 200px; /*to give width*/
+}

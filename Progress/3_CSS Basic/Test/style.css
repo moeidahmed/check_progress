@@ -1,0 +1,33 @@
+body
+{
+	background-color: grey;
+	padding: 15px;
+	font-family: times new roman;
+	text-align: center;
+}
+#Moeid1
+{
+	background-color: #7B3F00;
+	padding: 10px;
+	font-family: times new roman;
+	text-align: right;
+}
+.all-browser
+		{
+	background-color: lightgray;
+	padding: 5px;
+		}
+		.browser
+		{
+			background-color: white;
+		}
+		.all-browser > h1, .browser
+		{
+		margin: 10px;
+		padding: 5px;	
+		}
+		.browser > h2, p
+		{
+		margin: 4px;
+		font-size: 25 px;
+		}

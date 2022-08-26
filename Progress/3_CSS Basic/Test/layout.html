@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Layout</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+	body
+	{
+		font-family: Calibri;
+	}
+     header
+     {
+     background-color: black;
+     padding: 3px;
+     text-align: center;
+     color: lightblue;
+     font-size: 35px;
+
+     }
+     nav
+     {
+     float: left;
+	  width: 10%;
+	  height: 390px;
+	  background: #ccc;
+	  padding: 20px;
+     }
+     
+     article
+     {
+     float: left;
+     height: 390px;
+	background-color: grey;
+	width: 90%;
+	text-align: center;
+     }
+	 
+	.clearfix{
+		
+		display: table;
+		clear: both;
+	}
+	footer
+     {
+     	background-color: blue;
+     padding: 10px;
+     text-align: center;
+     color: lightblue;
+     }
+
+
+</style>
+<body>
+<header><h1>HEADER</h1></header>
+<section>
+	<nav>
+		<a href="">Home</a>	<br>
+		<a href="">About us</a><br>
+		<a href="">Connect Us</a><br>
+		<a href="">Solutions</a><br>
+		<a href="">Address</a><br>
+	</nav>
+	
+<article>
+	<h1>Islamabad</h1>
+	<p>Islamabad is the capital of Pakistan</p>
+	<h1>Lahore</h1>
+	<p>Lahore is the capital of Punjab</p>
+	<h1>Karachi</h1>
+	<p>Karachi is the capital of Sindh</p>
+	<h1>Quetta</h1>
+	<p>Quetta is the capital of Baluchistan</p>
+	<h1>Peshawar</h1>
+	<p>Peshawar is the capital of KPK</p>
+</article>
+<div class="clearfix"></div>
+</section>
+<footer><h1>FOOTER</h1></footer>
+<label for=""></label>
+<input type="submit" name="Submit">
+
+</body>
+</html>

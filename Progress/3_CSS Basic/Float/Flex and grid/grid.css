@@ -1,0 +1,59 @@
+.color-1 {
+  background-color: blueviolet;
+}
+.color-2 {
+  background-color: orangered;
+}
+.color-3 {
+  background-color: green;
+  height: 100px;
+}
+.color-4 {
+  background-color: goldenrod;
+}
+.color-5 {
+  background-color: palevioletred;
+}
+.color-6 {
+  background-color: steelblue;
+  order: 1;
+}
+.color-7 {
+  background-color: yellow;
+  align-self: center;
+}
+.color-8 {
+  background-color: crimson;
+}
+.color-8 {
+  align-self: baseline;
+  order: -1;
+}
+.color-5 {
+  align-self: flex-end;
+}
+.container-1 {
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 40px;
+  margin: 40px;
+  display: grid;
+  row-gap: 50px;
+  grid-template-columns: 150px 250px 150px 250px;
+  grid-template-rows: 300px 200px;
+  gap: 30px;
+
+  /* CSS GRID */
+}
+
+.container-2 {
+  font-family: sans-serif;
+  background-color: black;
+  font-size: 40px;
+  margin: 100px;
+
+  width: 1000px;
+  height: 600px;
+
+  /* CSS GRID */
+}

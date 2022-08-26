@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: white;
+      line-height: 1;
+    }
+    img {
+      height: 200px;
+      transform: scale(1.5);
+      border-radius: 8px;
+      box-shadow: 0 12px 24px rgb(0, 0, 0);
+    }
+    .carousel {
+      background-color: #087f5b;
+      width: 800px;
+      margin: 100px auto;
+      border-radius: 8px;
+      padding: 32px 40px 32px 86px;
+      display: flex;
+      align-items: center;
+      gap: 86px;
+
+      position: relative;
+    }
+    .testonimal-text {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.1;
+      margin-bottom: 32px;
+      color: #e6fcf5;
+    }
+    .testonimal-author {
+      font-size: 14px;
+      margin-bottom: 4px;
+      color: #c3fae8;
+    }
+    .testonimal-job {
+      font-size: 12px;
+      color: #c3fae8;
+    }
+    .btn {
+      background-color: white;
+      border: none;
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 24px rgb(0, 0, 0);
+      cursor: pointer;
+    }
+    .btn-left {
+      left: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .btn-right {
+      right: 0;
+      top: 50%;
+      transform: translate(50%, -50%);
+    }
+    .btn-icon {
+      width: 24px;
+      height: 24px;
+      stroke: #087f5b;
+    }
+    .dots {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translate(-50%, 32px);
+      display: flex;
+      gap: 12px;
+    }
+    .dot {
+      height: 12px;
+      width: 12px;
+      background-color: white;
+      border: 2px solid #087f5b;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+    .dot-fill {
+      background-color: #087f5b;
+    }
+  </style>
+  <body>
+    <div class="carousel">
+      <img src="images/maria.jpg" alt="Image of A Girl" />
+      <blockquote class="testonimal">
+        <p class="testonimal-text">
+          "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, ea
+          doloremque dignissimos ut dolores aliquam voluptatem illo tempore,
+          aspernatur repudiandae, provident nulla fugit veritatis quos
+          perspiciatis accusantium cum dolore laborum.
+        </p>
+        <p class="testonimal-author">Moeid Ahmed</p>
+        <p class="testonimal-job">Interner at Allied Consultant</p>
+      </blockquote>
+      <button class="btn btn-left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <button class="btn btn-right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="btn-icon"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot-fill">&NonBreakingSpace;</button>
+        <button class="dot">&NonBreakingSpace;</button>
+        <button class="dot">&NonBreakingSpace;</button>
+        <button class="dot">&NonBreakingSpace;</button>
+      </div>
+    </div>
+  </body>
+</html>

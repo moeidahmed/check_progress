@@ -1,0 +1,70 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+h3 {
+  padding: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  background-color: gainsboro;
+}
+.more-info:link {
+  color: black;
+}
+.more-info:hover {
+  color: black;
+  text-decoration: none;
+}
+.free {
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul {
+  padding: 0 30px;
+}
+li {
+  list-style: square;
+  padding-left: 10px;
+  line-height: 2;
+}
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+button:hover {
+  width: 100%;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-top: 6px solid black;
+}
+.article {
+  border: 5px solid black;
+}
+.container {
+  width: 825px;
+  margin: 100px auto;
+}
+h4,
+h5 {
+  margin: 5px 0;
+  font-weight: bolder;
+  font-size: 15px;
+}
+p {
+  margin: 10px 0;
+}
+a {
+  margin: 10px 0;
+}
